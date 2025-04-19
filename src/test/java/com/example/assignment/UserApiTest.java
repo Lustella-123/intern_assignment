@@ -126,7 +126,7 @@ public class UserApiTest {
 		mockMvc.perform(patch("/admin/users/" + user.getId() + "/roles")
 						.header("Authorization", token))
 				.andExpect(status().isOk())
-				.andExpect(jsonPath("$.roles[0].role").value("ADMIN"));
+				.andExpect(jsonPath("$.role").value("ADMIN"));
 	}
 
 	@Test
