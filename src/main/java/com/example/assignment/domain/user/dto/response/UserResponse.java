@@ -9,13 +9,13 @@ import lombok.Getter;
 public class UserResponse {
     private String username;
     private String nickname;
-    private String role;
+    private UserResponseRole roles;
 
     public static UserResponse from(User user) {
         return UserResponse.builder()
                 .username(user.getUsername())
                 .nickname(user.getNickname())
-                .role(user.getRole().name())
+                .roles(new UserResponseRole(user.getRole()))
                 .build();
     }
 }
