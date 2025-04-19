@@ -29,7 +29,7 @@ public class JwtFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         String url = httpRequest.getRequestURI();
 
-        if (url.startsWith("/signup") || url.startsWith("/login")) {
+        if (url.startsWith("/signup") || url.startsWith("/login") || url.startsWith("/swagger") || url.startsWith("/v3/api-docs") || url.startsWith("/swagger-ui") || url.startsWith("/favicon.ico")) {
             chain.doFilter(request, response);
             return;
         }

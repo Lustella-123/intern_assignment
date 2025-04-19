@@ -32,7 +32,6 @@ public class JwtUtil {
         this.key = Keys.hmacShaKeyFor(bytes);
     }
 
-    //todo: UserRole 넣어야함
     public String createToken(Long userId, String username, Enum<UserRole> role) {
         Date now = new Date();
         return BEARER_PREFIX + Jwts.builder()
