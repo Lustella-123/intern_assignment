@@ -6,7 +6,6 @@ import lombok.*;
 
 @Entity
 @Getter
-@Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Builder
@@ -28,4 +27,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserRole role;
 
+    public void setRole(UserRole role) {
+        this.role = role;
+    }
 }
