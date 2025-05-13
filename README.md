@@ -12,7 +12,7 @@
 ## 🚀 배포 정보
 
 - **Base URL**: `http://52.78.222.135:8080`
-- **Swagger UI**: [[http://13.125.220.254:8080/swagger-ui/index.html](http://13.125.220.254:8080/swagger-ui/index.html)](http://52.78.222.135:8080/swagger-ui/index.html)
+- **Swagger UI**: [http://52.78.222.135:8080/swagger-ui/index.html](http://52.78.222.135:8080/swagger-ui/index.html)
 
 ---
 
